@@ -14,7 +14,7 @@ function Navbar(props) {
   return (
     <div className={styles.container}>
       <Nav pills>
-        <NavItem>
+        <NavItem className={styles.icon}>
         <Icon name="bananaIcon" size={75} />
         </NavItem>
         <NavItem>

@@ -1,11 +1,11 @@
 .container{
 /* Rectangle 147 */
 
-position: absolute;
+/* position: absolute;
 left: 0%;
 right: 0%;
 top: 0%;
-bottom: 0%;
+bottom: 0%; */
 
 height: 100px;
 
@@ -17,13 +17,21 @@ ul {
     list-style-type: none;
 }
 
+.icon {
+    position: absolute;
+    left: 2.22%;
+    right: 91.83%;
+    top: 16.22%;
+    bottom: 16.22%;
+    padding-left: 10;
+}
 
 .bananaPortalNav{
 /* BANANA PORTAL */
 
 
 position: absolute;
-left: 10.83%;
+left: 11.83%;
 right: 80.69%;
 top: 29.73%;
 bottom: 24.32%;

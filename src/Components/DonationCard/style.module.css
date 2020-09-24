@@ -1,3 +1,82 @@
-.container{
+@import '../../colors.module.css';
 
+.container{
+    max-width: 500px;
+    max-height: 512px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background: var(--LIGHT_GRAY);
+    color: var(--NAVY_BLUE)
+}
+
+.claimedProgress {
+    flex-direction: column;
+    /* border-width: 3;
+    border-style: solid;
+    border-color: black; */
+    display: flex;
+    align-items: flex-start;
+    padding: 25px;
+}
+
+.percentClaimed {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+progress {
+    align-items: stretch;
+}
+
+.divider {
+    width: 400px;
+    height: 0px;
+    border-width: .25px;
+    border-style: solid;
+    border-color: grey;
+}
+
+.claimedContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.activeContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 33px;
+}
+
+.claimedTotal {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    padding-left: 15px;
+}
+
+.activeTotal {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    padding-left: 15px;
 }
