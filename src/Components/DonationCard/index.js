@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './style.module.css';
+import CurrentTimeAndDate from './CurrentTimeAndDate';
 
 function DonationCard(props) {
   // eslint-disable-next-line no-unused-vars
@@ -17,6 +18,7 @@ function DonationCard(props) {
         <div>
           <progress className={styles.progressBar} max={1} value={fractionClaimed} />
         </div>
+        <CurrentTimeAndDate />
       </div>
       <div className={styles.divider} />
       <div>
