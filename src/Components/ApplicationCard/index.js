@@ -26,7 +26,7 @@ function ApplicationCard(props) {
   return (
     <div className={styles.container} type={type}>
       <div className={styles.icon} onClick={onClick}>
-        <Icon name={iconName} size={70}></Icon>
+        <Icon name={iconName} size={60}></Icon>
       </div>
       <div className={styles.body}>
         {userCount.toLocaleString(undefined, { minimumIntegerDigits: 2, useGrouping: false })}
@@ -50,7 +50,7 @@ ApplicationCard.defaultProps = {
   type: 'donor',
   userCount: 0,
   approvedCount: 0,
-  onClick: () => {}
+  onClick: () => {},
 };
 
 export default ApplicationCard;

@@ -14,8 +14,8 @@ function DonationCard(props) {
           {percentClaimed}
           %
         </div>
-        <div className={styles.progressBar}>
-          <progress max={1} value={fractionClaimed} />
+        <div>
+          <progress className={styles.progressBar} max={1} value={fractionClaimed} />
         </div>
       </div>
       <div className={styles.divider} />
