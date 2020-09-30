@@ -1,6 +1,8 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
-function CurrentTimeAndDate() {
+function CurrentTimeAndDate(props) {
+  const { style } = props;
   const [clockText, setClockText] = useState('');
   const monthArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -38,10 +40,18 @@ function CurrentTimeAndDate() {
   });
 
   return (
-    <div>
+    <div style={style}>
       {clockText}
     </div>
   );
 }
+
+CurrentTimeAndDate.propTypes = {
+  style: PropTypes.object,
+};
+
+CurrentTimeAndDate.defaultProps = {
+  style: {},
+};
 
 export default CurrentTimeAndDate;
